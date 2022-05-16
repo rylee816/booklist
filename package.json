@@ -1,12 +1,13 @@
-{ 
+{
   "homepage": "https://rylee816.github.io/booklist/",
   "name": "book-list",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "start": "parcel ./*.html",
+    "predeploy": "rm -rf dist && parcel build ./*.html --public-url https://rylee816.github.io/booklist/",
+    "deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,6 +21,7 @@
     "url": "https://github.com/rylee816/booklist/issues"
   },
   "dependencies": {
-    "gh-pages": "^4.0.0"
+    "gh-pages": "^4.0.0",
+    "parcel": "^2.5.0"
   }
 }
