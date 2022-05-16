@@ -1,0 +1,25 @@
+{ 
+  "homepage": "https://rylee816.github.io/booklist/",
+  "name": "book-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rylee816/booklist.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rylee816/booklist/issues"
+  },
+  "dependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
